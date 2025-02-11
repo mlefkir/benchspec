@@ -22,7 +22,8 @@ jobs:
         run: |
           pip install poetry
           poetry install
-          pytest --benchmark-json results/output.json
+          cd results
+          pytest --benchmark-json output.json
       - name: Store benchmark result
         uses: benchmark-action/github-action-benchmark@v1
         with:
