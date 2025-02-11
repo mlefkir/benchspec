@@ -33,7 +33,7 @@ jobs:
           poetry run pytest .. --benchmark-json output.json
         working-directory: results
       - name: Store benchmark result
-        uses: benchmark-action/github-action-benchmark@v1
+        uses: mlefkir/github-action-benchmark@v1 #benchmark-action/github-action-benchmark@v1
         with:
           name: Python Benchmark with pytest-benchmark
           tool: 'pytest'
