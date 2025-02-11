@@ -37,4 +37,5 @@ def test_jaxspec(benchmark):
     # run a first time 
     model = create_model_jaxspec()
     _ = evaluate_model_jaxspec(model,params)
+    benchmark.extra_info['jaxspec_version'] = jaxspec.__version__
     result = benchmark(evaluate_model_jaxspec,model,params=params)
