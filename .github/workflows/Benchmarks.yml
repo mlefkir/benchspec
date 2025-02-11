@@ -29,9 +29,9 @@ jobs:
         run: poetry install
 
       - name: Run benchmark
-        run: |
-          cd results
-          poetry run pytest --benchmark-json output.json
+        run:
+          poetry run pytest .. --benchmark-json output.json
+        working-directory: results
       - name: Store benchmark result
         uses: benchmark-action/github-action-benchmark@v1
         with:
