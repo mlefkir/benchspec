@@ -11,7 +11,8 @@ dependencies = [
     "pytest-benchmark (>=5.1.0,<6.0.0)",
     "jaxspec (>=0.2.1,<0.3.0)",
     "jax (>=0.5.0,<0.6.0)",
-    "pytest (>=8.3.4,<9.0.0)"
+    "pytest (>=8.3.4,<9.0.0)",
+    "asv (>=0.6.4,<0.7.0)"
 ]
 
 [build-system]

@@ -45,6 +45,7 @@ jobs:
           alert-threshold: '200%'
           comment-on-alert: true
           fail-on-alert: true
+          summary-always: true
           #alert-comment-cc-users: '@mlefkir'
 
       # - name: Store benchmark result - separate results repo
