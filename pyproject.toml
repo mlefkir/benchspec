@@ -9,17 +9,17 @@ readme = "README.md"
 requires-python = ">=3.10,<3.13"
 dependencies = [
     "pytest-benchmark (>=5.1.0,<6.0.0)",
-    "jaxspec (>=0.2.1,<0.3.0)"
+    "jaxspec (>=0.2.1,<0.3.0)",
+    "jax (>=0.5.0,<0.6.0)",
+    "pytest (>=8.3.4,<9.0.0)"
 ]
-
-
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
-# ...
+package-mode = false
 packages = [
-    { include = "benchmark" },
+    {include = "test",from = "."}
 ]
