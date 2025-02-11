@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1739277446505,
+  "lastUpdate": 1739290242294,
   "repoUrl": "https://github.com/mlefkir/benchspec",
   "entries": {
     "Python Benchmark with pytest-benchmark": [
@@ -62,6 +62,37 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000100515568819695",
             "extra": "mean: 695.7254682532645 usec\nrounds: 756"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "mehdylefkir.work@gmail.com",
+            "name": "Mehdy Lefkir",
+            "username": "mlefkir"
+          },
+          "committer": {
+            "email": "mehdylefkir.work@gmail.com",
+            "name": "Mehdy Lefkir",
+            "username": "mlefkir"
+          },
+          "distinct": true,
+          "id": "813b993de3e52be47eb4d69518afc08015e66db5",
+          "message": "update action",
+          "timestamp": "2025-02-11T16:09:45Z",
+          "tree_id": "7b75bc942d751248653dc675dd9078d24bab0682",
+          "url": "https://github.com/mlefkir/benchspec/commit/813b993de3e52be47eb4d69518afc08015e66db5"
+        },
+        "date": 1739290241898,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "test/test_jaxspec.py::test_jaxspec",
+            "value": 1562.272407595907,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00012481046865893208",
+            "extra": "mean: 640.0932354293087 usec\nrounds: 875"
           }
         ]
       }
